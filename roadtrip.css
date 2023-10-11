@@ -1,0 +1,84 @@
+body {
+	background-color: aliceblue;
+}
+#container {
+	position: relative;
+	width: 600px;
+	height: 250px;
+	border-bottom: 3px solid #422a14;
+	overflow: hidden;
+}
+#car {
+	position: absolute;
+	width: 20%;
+	bottom: 0;
+	right: 50%;
+	z-index: 1;
+
+}
+
+#mountain {
+	position: absolute;
+	width: 40%;
+	bottom: -20%;
+	right: -50%;
+
+	animation-name: mountain;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#grass {
+	position: absolute;
+	width: 5%;
+	bottom: -1%;
+	z-index: 2;
+
+	animation-name: grass;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#tree {
+	position: absolute;
+	width: 15%;
+	bottom: 0;
+
+	animation-name: tree;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes mountain {
+	to {
+		transform: translateX(-2000px);
+	}
+
+}
+
+@keyframes grass {
+	from {
+		right: -200px;
+	}
+	to {
+		right: 2000px;
+	}
+}
+
+@keyframes tree {
+	from {
+		transform: translate(1350px);
+	}
+		to {
+			transform: translate(-50px);		
+	}
+}
+
+
+
+
+
+
